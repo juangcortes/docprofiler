@@ -1,14 +1,6 @@
 import os
 import re
 
-class DocCleanser:
-    def clean_filext():
-        pass
-
-    def clean_filenames():
-        pass
-
-
 class DirManager:
     def read_dir(path:str):
         return os.listdir(filedir).sorted()
@@ -22,16 +14,3 @@ class DirManager:
 
     def create_subdirs(filemap:dict, path:str):
         pass
-
-class DocProfiler:
-    def __init__(
-        self,
-        path:str):
-
-        self.dirpath = path
-
-    def run(self):
-        dm = DirManager()
-        filedir = dm.read_dir(self.dirpath)
-        filemap = dm.define_subdirs(filedir)
-        dm.create_subdirs(filemap, self.dirpath)
